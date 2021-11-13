@@ -1,18 +1,31 @@
 .App {
-  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  /* height: 100vh; */
+  /* background: rgb(238, 69, 64); */
+  /* background: linear-gradient(
+    180deg,
+    rgba(238, 69, 64, 1) 0%,
+    rgba(199, 44, 65, 1) 15%,
+    rgba(128, 19, 54, 1) 30%,
+    rgba(81, 10, 50, 1) 45%,
+    rgba(45, 20, 44, 1) 100%
+  ); */
 }
 
+.App {
+  text-align: center;
+  /* padding: 40px 30px; */
+  /* max-width: 100% !important; */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,9 +36,103 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
+}
+
+.card-title{
+  color: black;
+}
+.btn-outline-success{
+  color: blueviolet;
+  border-color: blueviolet;
+}
+.btn-outline-success:hover{
+  color: #fff;
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+.inputBuscar{
+  width: 50% !important;
+  border-radius: 10px;
+}
+
+.left{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.white{
+  color: white;
+}
+.card{
+  border: none;
+}
+.hoverPets{
+  padding: 1rem;
+  /* background: #fbfbfb; */
+  border-radius: 8px;
+  color: #635e69;
+  transition: all .25s cubic-bezier(.4,0,.2,1) 0s;
+}
+.hoverPets:hover{
+  background: #ededed;
+  box-shadow: 0 4px 16px rgb(46 41 51 / 8%), 0 8px 24px rgb(71 63 79 / 16%); 
+}
+.card > img {
+  align-self: center;
+}
+.containerHeader{
+  background: black;
+  height: 40px;
+}
+.containerHeader > .container > .row > .col-sm-2 {
+  color: white;
+  padding: 0px;
+  margin-top: 8px;
+}
+.politicas{
+  color: blueviolet;
+  font-family: -webkit-body;
+}
+.containerCategory {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.containerCategory > .input-group-append > .btn-outline-success{
+  margin-right: 6px;
+  opacity: 0.6;
+}
+.container > .discount > img {
+  margin-top: 10px;
+  width: 100%;
+}
+.footerList{
+  background: white;
+}
+.footerList > .container > .row > .col-sm-2 > ul{
+  list-style: none;
+  color: blueviolet;
+}
+.footerList > .container > .row > .col-sm-2 > ul > .fontWeight{
+  font-weight: 800;
+}
+.laikaFooter{
+  width: 52px;
+}
+.containerFooter{
+  background: rgb(240,241,244);
+}
+.containerInput{
+  align-items: end;
+  right: 0;
+  display: flex;
+  /* justify-content: flex-end; */
+  background: rgb(96,62,133);
+  /* margin-left: 130px; */
+  padding-bottom: 25px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +141,16 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media (max-width: 988px){
+  .inputBuscar{
+    width: 100% !important;
+  }
+  .App{
+    padding: 40px 5px;
+  }
+  .containerInput{
+    padding-bottom: 15px;
   }
 }
